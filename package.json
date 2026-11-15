@@ -1,0 +1,32 @@
+{
+  "bin": {
+    "mintguard": "./src/cli.js"
+  },
+  "dependencies": {
+    "ethers": "^6.13.4"
+  },
+  "description": "MintGuard \u2014 a security auditor agent for free mints on BNB Chain. Give it a contract address, get a GO / CAUTION / BLOCK verdict with on-chain evidence.",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "bnb",
+    "bsc",
+    "audit",
+    "honeypot",
+    "security",
+    "agent",
+    "zkverify",
+    "agent-games"
+  ],
+  "license": "MIT",
+  "main": "src/server.js",
+  "name": "mintguard-agent",
+  "scripts": {
+    "audit": "node src/cli.js",
+    "start": "node src/server.js",
+    "test": "node --test test/audit.test.js"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
